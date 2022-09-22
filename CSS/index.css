@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+a{
+     text-decoration: none;
+}
+nav, ul{
+    list-style: none;
+}
+
+/*NAV BAR*/
+
+.nav-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    z-index: 100;
+}
+
+.logo{
+    
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    margin-right: 0.7rem;
+}
+
+.logo .logo-label{
+    font-size: 2rem;
+}
+
+.nav .nav-ul{
+    display: flex;
+}
+
+.nav .nav-ul .nav-items{
+    margin-right: 1rem;
+}
+
+.nav .nav-ul .nav-items:last-child{
+    margin-right: 0;
+}
+
+.nav .nav-ul .nav-items a{
+    font-size: 1.3rem;
+}
+/*FIM NAV BAR*/
+
+
+/*BANNER*/
+
+.banner{
+  
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    background-image: url('../img/banner.jpg');
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+   
+}
+
+.banner h1{
+    font-size: 3rem;
+    
+}
+.banner h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.banner h1, .banner h4{
+    color: white;
+    margin-bottom: 1.5rem;
+    z-index: 100;
+    
+}
+
+.banner .banner-btn{
+   
+    padding: 1rem 3rem;
+    border-radius: .25rem ;
+    background-color: #0006ff;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    z-index: 100;
+}
+
+@media(max-width:585px){
+    .nav-bar{
+        flex-direction: column;
+    }
+}
